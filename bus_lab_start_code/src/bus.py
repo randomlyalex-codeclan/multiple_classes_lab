@@ -1,7 +1,7 @@
 class Bus:
-    def __init__(self, route_number, destination):
+    def __init__(self, route_number, destinations):
         self.route_number = route_number
-        self.destination = destination
+        self.destinations = destinations
         self.passengers = []
 
 
@@ -21,8 +21,17 @@ class Bus:
         self.passengers = []
         # or self.passengers.clear()
 
-    def pick_up_from_stop(self, bus_stop):
-        self.passengers.extend(bus_stop.queue)
-        bus_stop.clear()
+    # def pick_up_from_stop(self, bus_stop):
+    #     self.passengers.extend(bus_stop.queue)
+    #     bus_stop.clear()
+    
+    #def bus_at_bus_stop(self, bus_stop_string):
+        # loop through passengers at the stop and
+        # add to bus if the destination exists
+
+        # loop through passengers on the bus and
+        # remove if the destination is the bus stop
+        #pass
+
         
 
